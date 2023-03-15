@@ -15,7 +15,7 @@ export default {
                 <img :src="project.image" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ project.title }}</h5>
-                    <p class="card-text">{{ project.description }}</p>
+                    <p class="card-text">{{ `${project.description.slice(0, 85)}...` }}</p>
                     <a :href="project.full_code" class="btn btn-primary">View full code</a>
                 </div>
             </div>
