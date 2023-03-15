@@ -1,10 +1,11 @@
 <script>
 import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
+import ProjectCard from './components/ProjectCard.vue';
 const apiUri = 'http://localhost:8000/api/'
 export default {
   name: 'App',
-  components: {AppHeader},
+  components: {AppHeader, ProjectCard},
 
   data() { 
     return {
@@ -31,7 +32,7 @@ export default {
 
 <template>
     <AppHeader />
-    
+    <ProjectCard :projects="projects" />    
 
 </template>
 
