@@ -10,7 +10,7 @@ export default {
 
 <div class="container mt-5">
     <h1 class="text-center text-primary my-5">
-        My favourite projects
+        My Favourite Projects
     </h1>
     <div class="row g-5">
         <div v-for="project in projects" class="col-4">
@@ -19,7 +19,10 @@ export default {
                 <div class="card-body">
                     <h5 class="card-title">{{ project.title }}</h5>
                     <p class="card-text">{{ `${project.description.slice(0, 85)}...` }}</p>
-                    <a :href="project.full_code" class="btn btn-primary">View full code</a>
+                    <div class="buttons">
+                        <a :href="project.full_code" class="btn btn-primary me-2">Full code</a>
+                        <router-link class="btn btn-success" :to="{name: 'project-details', params: {id: project.id}}">Details</router-link>
+                    </div>
                 </div>
             </div>
         </div>

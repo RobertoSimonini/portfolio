@@ -2,7 +2,7 @@
 import axios from 'axios';
 import ProjectCard from '../components/ProjectCard.vue';
 import AppLoader from '../components/AppLoader.vue';
-const apiUri = 'http://localhost:8000/api/'
+const apiUri = 'http://localhost:8000/api/';
 
 export default {
     name: 'HomePage',
