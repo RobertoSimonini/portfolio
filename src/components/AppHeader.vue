@@ -16,21 +16,26 @@ export default {
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <router-link class="nav-link" to="/">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/contact">Contact</router-link>
             </li>
           </ul>
         </div>
       </div>
 </nav>
 
-<h1 class="text-center text-primary my-3">
-  Projects
-</h1>
+
 
 </template>
 
 
 
 <style scoped>
+
+nav {
+  height: 75px;
+}
 
 </style>
